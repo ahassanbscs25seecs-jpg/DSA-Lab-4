@@ -67,14 +67,15 @@ void CreateThreeNodes(List &list) {
 int main() {
     List list;
 
+    std::cout << "List before creation: ";
     list.PrintList();
 
     CreateThreeNodes(list);
     std::cout << "List after creation: ";
     list.PrintList();
 
-    std::cout << "List after entering 10, 20, 30: ";
     list.ClearList();
+    std::cout << "List after cleanup: ";
     list.PrintList();
 
     return 0;
